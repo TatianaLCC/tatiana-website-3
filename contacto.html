@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Contacts</title>
+		<link rel="stylesheet" href="css/style-contacto.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+		<script>
+		// function _(id){ return document.getElementById(id); }
+		// function submitForm(){
+		// 	_("mybtn").disabled = true;
+		// 	_("status").innerHTML = 'please wait ...';
+		// 	var formdata = new FormData();
+		// 	formdata.append( "name", _("name").value );
+		// 	formdata.append( "email", _("email").value );
+		// 	formdata.append( "mensaje", _("mensaje").value );
+		// 	var ajax = new XMLHttpRequest();
+		// 	ajax.open( "POST", "contacto.php" );
+		// 	ajax.onreadystatechange = function() {
+		// 		if(ajax.readyState == 4 && ajax.status == 200) {
+		// 			if(ajax.responseText == "success"){
+		// 				_("my-form").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent.</h2>';
+		// 			} else {
+		// 				_("status").innerHTML = ajax.responseText;
+		// 				_("mybtn").disabled = false;
+		// 			}
+		// 		}
+		// 	}
+		// 	ajax.send( formdata );
+		// }
+		</script>
+	</head>
+	<body>
+		<header id="header" class="header"> <!-- menu -->
+			<figure class="logotipo"><!-- logotipo -->
+				<a href="#"> <img src="images/logo-3.jpg"/></a>
+			</figure>
+			<nav class="menu-a"> <!--menu -->
+				<ul>
+					<li>
+						<a href="#" >HOME</a>
+					</li>
+					<li>
+						<a href="#" >ABOUT</a>
+					</li>
+					<li>
+						<a href="work.html">WORKS</a>
+					</li>
+					<li>
+						<a href="#" >NEWS</a>
+					</li>
+					<li>
+						<a href="contacto.html">CONTACT</a>
+					</li>
+					<li>
+						<a href="#" >DEMOS</a>
+					</li>
+					<li>
+						<a class="buy-now">BUY NOW</a>
+					</li>
+					<li>
+						<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+					</li>
+					<li>
+						<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+					</li>
+					<li>
+						<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+					</li>
+					<li>
+						<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="photos" class="p-1">
+			<p>Our past partners-wether they be the government, trend-setting<br>
+				companies or even private individuals - have always been appreciative<br>
+				of our professional dynamism.
+			</p> 
+			<h1>Drop us a line</h1>
+			<form action="https://formspree.io/tlillocares@gmail.com" method="POST" no validate data-abide>
+			<form id="my-form" onsubmit="SubmitForm(); return false;">
+				<input class="input-3" type="text" name="nombre" id="name" placeholder="Your Name" required>
+				<input class="input-3" type="email" id="email" name="email" placeholder="Your Email" required>
+			<label class="radio">
+				<input type="radio" name="budget" id="Low Budget"> Low Budget
+				<input type="radio" name="budget" id="$5,000 - $10,000">$5,000 - $10,000
+				<input type="radio" name="budget" id="+$10,000">+$10,000
+			</label>
+			<textarea class="caja" name="mensaje" id="mensaje"  placeholder="Your Message" required></textarea>
+			<input class="send" id="mybtn" type="submit" value="Send Message"><span id="status"></span>
+			</form/.
+		</section>
+		<section class="derecha">
+			<h3>Our location</h3>
+			<div class="linea-3"></div>
+			<h4 class="dire">4096 N Highland St,Arlington<br>
+				VA 32101,USA</h4><br>
+			<i class="fa fa-mobile fa-2x phone" aria-hidden="true"></i> <h5 class="num">800 1234 56 78</h5>
+			<h3>Job Openings</h3>
+			<div class="linea-3"></div>
+			<h4>-Design Intern (m/f)</h4>
+			<h4>-Junior Account Manager (m/f)</h4>
+			<div class="linea-4"></div>
+			<h5 class="emails">jobs@zodiacagency.com</h4>
+			<h3 class="say">Say Hello</h3>
+			<div class="linea-5"></div>
+			<p>Graphic and web design is our business. We attach<br>
+				great importance to 'somthing', but also to <br>
+				service and prompt delivery. We do has a strategic<br>
+				purpose.</p>
+			<div class="linea-6"></div>
+			<h5 class="emails-2">hello@zodiacagency.com</h4>
+		</section>
+		<div class="linea-2"></div>
+		<footer class="footer">
+			<figure class="logo-2">
+				<a href="#"> <img src="images/logo-2.jpg"/></a>
+			</figure>
+			<div class="footer-2">
+				<div class="direccion">
+					<h3 class="titulo-f"> HEAD OFFICE</h3>
+					<a href="https://goo.gl/maps/362SWN8hZvk" target="_blank" class="direccion-2">4096 N Highland St,Arlington<br>
+					VA 32101,USA</a>
+					<a class="email" href="mailto:ironmass@demonlink.org">ironmass@demonlink.org</a>
+					<a class="tel" href="tel:+800 1234 56 78">800 1234 56 78</a>
+				</div>
+				<div class="direccion-b">
+					<h3 class="titulo-f-2">QUICK LINKS</h3>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Service</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">News</a>
+						</li>
+						<li>
+							<a href="contactos.html">Contacts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="input-1">
+				<input class="input" type="email" placeholder="Your Email Address" name="email">
+				<button class="boton-3">Subscribe</button>
+				<h6 class="final">© 2016 Zodiac. All rights reserved. Terms and Conditions | Privacy Policy</h6>
+				<ul class="iconos-2">
+					<li>
+						<i class="fa fa-linkedin fa-1g" aria-hidden="true"></i>
+					</li>
+					<li>
+						<i class="fa fa-twitter fa-1g" aria-hidden="true"></i>
+					</li>
+					<li>
+						<i class="fa fa-facebook fa-1g" aria-hidden="true"></i>
+					</li>
+					<li>
+						<i class="fa fa-instagram fa-1g" aria-hidden="true"></i>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
